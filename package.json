@@ -1,0 +1,19 @@
+{
+  "name": "rcc-design-apis",
+  "version": "1.0.0",
+  "description": "This api is about apis for RCC Design",
+  "main": "app.js",
+  "scripts": {
+    "start" : "SET NODE_ENV=production & node ./src/app.js",
+    "dev" : "nodemon ./src/app.js"
+  },
+  "author": "K.V.N.Ramesh",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
