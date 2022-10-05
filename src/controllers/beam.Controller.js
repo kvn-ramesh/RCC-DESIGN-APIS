@@ -15,7 +15,7 @@ const ftrpsrrbs = (req, res, next) => {
                 totalArray.push({R100: R100,
                     fck: fck,
                     fy : fy,
-                    total : total,
+                    total : (total/100).toFixed(2),
                     ldna : ldna.toFixed(3),
                     pt: pt.toFixed(3),
                     mulim: mulim.toFixed(3)
