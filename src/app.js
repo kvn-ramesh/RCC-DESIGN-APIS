@@ -3,7 +3,7 @@ const app = express();
 const dotenv = require('dotenv');
 
 // Setting up config.env file variables
-dotenv.config({path : './src/config/config.env'});
+dotenv.config({path : './config/config.env'});
 
 // Importing all routes
 const beams = require('./routes/beam.Routes');
