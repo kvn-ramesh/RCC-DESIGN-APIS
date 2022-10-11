@@ -6,8 +6,10 @@ dotenv.config({path : '../config/config'});
 const ftrpsrrbs = (req, res, next) => {
     const fck = process.env.fck.split(", ");
     const fy = process.env.fy.split(", ");
+    const RLOWER = Number(process.env.RLOWER);
+    const RUPPER = Number(process.env.RUPPER);
     const totalArray = [];
-    for (var R100 = 30; R100 <= 378; R100=R100+2)
+    for (var R100 = RLOWER; R100 <= RUPPER; R100=R100+2)
     {
         fck.map(fck=>{
             fy.map(fy=>{
