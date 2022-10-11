@@ -6,10 +6,8 @@ const dotenv = require('dotenv');
 dotenv.config({path : './src/config/config.env'});
 
 // Importing all routes
-const jobs = require('./routes/jobs.Routes');
 const beams = require('./routes/beam.Routes');
 
-app.use('/api/v1',jobs);
 app.use('/api/v1',beams);
 
 const PORT = process.env.PORT;
