@@ -1,8 +1,15 @@
 const { calcftrpsrrbs, ptlim, limitingdepthna, mulimbd2 } = require('../utils/beamFunctions');
+const dotenv = require('dotenv');
+dotenv.config({path : '../config/config'});
+
 // flexureTensionReinforcementPercentageSinglyReinforcedRectangularBeamSections ftrpsrrbs
 const ftrpsrrbs = (req, res, next) => {
-    const fck = [20, 25];
-    const fy = [250, 415, 500];
+    // const fck = [20, 25];
+    // const fy = [250, 415, 500];
+    const fck = process.env.fck.split(", ");
+    const fy = process.env.fy.split(", ");
+    console.log(`Value of fck is ${fck}.`);
+    console.log(`Value of fy is ${fy}.`);    
     const totalArray = [];
     for (var R100 = 30; R100 <= 378; R100=R100+2)
     {
