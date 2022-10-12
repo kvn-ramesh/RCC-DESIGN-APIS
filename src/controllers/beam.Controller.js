@@ -32,7 +32,7 @@ const ftrpsrrbs = (req, res, next) => {
 
     res.status(200).json({
         message : 'Tension Reinforcement Percentage for Singly Reinforced Rectangular Beam Sections in Flexure',
-        value: totalArray
+        data: totalArray
     });
 };  
   
