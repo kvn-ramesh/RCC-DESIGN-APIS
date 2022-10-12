@@ -9,7 +9,7 @@ const ftrpsrrbs = (req, res, next) => {
     const RLOWER = Number(process.env.RLOWER);
     const RUPPER = Number(process.env.RUPPER);
     const totalArray = [];
-    for (var R100 = RLOWER; R100 <= RUPPER; R100=R100+2)
+    for (var R100 = RLOWER; R100 <= RUPPER; R100=R100+1)
     {
         fck.map(fck=>{
             fy.map(fy=>{
