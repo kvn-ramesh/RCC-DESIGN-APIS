@@ -17,13 +17,13 @@ const ftrpsrrbs = (req, res, next) => {
                 const ldna = limitingdepthna(fy);
                 const pt = ptlim(fck, fy);
                 const mulim = mulimbd2(fck, fy);                
-                totalArray.push({R100: (R100/100).toFixed(2),
-                    fck: fck,
+                totalArray.push({R : (R100/100).toFixed(2),
+                    fck : fck,
                     fy : fy,
                     total : total,
                     ldna : ldna.toFixed(3),
-                    pt: pt.toFixed(3),
-                    mulim: mulim.toFixed(3)
+                    pt : pt.toFixed(3),
+                    mulim : mulim.toFixed(3)
                   });
             });
         });

@@ -6,7 +6,7 @@ const calcftrpsrrbs = (fck, fy, R100) => {
     const R = R100 /100;
     const maxpt = ptlim(fck, fy);
     const mumaxbd2 = mulimbd2(fck, fy);
-    const mubd2 = ((fck/(2.01*fy))*(1-Math.sqrt(1-((4.6207*R)/fck)))*100).toFixed(3);
+    const mubd2 = ((fck/(2.01*fy))*(1-Math.sqrt(1-((4.620689*R)/fck)))*100).toFixed(3);
     if ((R <= mumaxbd2) && (mubd2 <= maxpt)) {
         return mubd2
     } else {
