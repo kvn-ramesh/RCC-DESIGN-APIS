@@ -31,8 +31,8 @@ const ftrpsrrbs = (req, res, next) => {
     };
 
     res.status(200).json({
-        "@odata.context" : "https://rcc-design-apis.herokuapp.com/api/v1/beams",
-        "value" : totalArray
+        message : 'Tension Reinforcement Percentage for Singly Reinforced Rectangular Beam Sections in Flexure',
+        value: totalArray
     });
 };  
   
