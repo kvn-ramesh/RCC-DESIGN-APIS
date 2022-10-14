@@ -25,7 +25,7 @@ const ptlim = (fck, fy) => {
     const xumaxbyd = limitingdepthna(fy);
 
     return (
-        41.38*(fck/fy)*xumaxbyd
+        41.37931*(fck/fy)*xumaxbyd
     )
 }
 
