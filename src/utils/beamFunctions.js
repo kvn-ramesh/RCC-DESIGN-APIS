@@ -2,6 +2,7 @@ const dotenv = require('dotenv');
 dotenv.config({path : '../config/config'});
 const ES = process.env.ES;
 
+// Formula to calculate Tension Reinforcement Percentage for Singly Reinforced Rectangular Beam Section under flexure
 const calcftrpsrrbs = (fck, fy, R100) => {
     const R = R100 /100;
     const maxpt = ptlim(fck, fy);
@@ -15,12 +16,14 @@ const calcftrpsrrbs = (fck, fy, R100) => {
     
 }
 
+// Formula to calculate Limiting depth of neutral axis
 const limitingdepthna = (fy) => {
     return (
         0.0035/(0.0055+0.87*(fy/ES))
     )
 }
 
+// Formula to calculate Limiting Percentage of Tensile Steel
 const ptlim = (fck, fy) => {
     const xumaxbyd = limitingdepthna(fy);
 
@@ -29,6 +32,7 @@ const ptlim = (fck, fy) => {
     )
 }
 
+// Formula to calculate Limiting Moment of Resistance
 const mulimbd2 = (fck, fy) => {
     const xumaxbyd = limitingdepthna(fy);
 
